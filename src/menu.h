@@ -212,6 +212,11 @@ class Menu: public ModalWindow
       content->body.select(index);
     }
 
+    int selection()
+    {
+        return content->body.selection();
+    }
+
 #if defined(HARDWARE_KEYS)
     void onEvent(event_t event) override;
 #endif

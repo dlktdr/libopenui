@@ -95,6 +95,7 @@ bool MenuBody::onTouchEnd(coord_t /*x*/, coord_t y)
     }
     else {
       menu->deleteLater();
+      select(index);
       lines[index].onPress();
     }
   }
